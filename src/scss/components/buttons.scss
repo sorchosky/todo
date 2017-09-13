@@ -1,0 +1,15 @@
+.checked {
+  text-decoration: line-through;
+}
+
+span.close {
+  margin-right: 0.5em;
+  background-color: rgba(0,0,0,0.05);
+  padding: 0 0.3em;
+  color: #333;
+  transition: 0.3s ease;
+  &:hover{
+    color: red;
+    cursor: pointer;
+  }
+}

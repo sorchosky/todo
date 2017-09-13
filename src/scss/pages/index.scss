@@ -25,8 +25,11 @@ ul{
   margin: 0.25em auto;
   width: 100%;
   background-color: #eeeeee;
+  transition: 0.3 ease;
 }
 
 li{
   @extend .list-item;
+  display: flex;
+  justify-content: space-between;
 }

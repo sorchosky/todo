@@ -20,4 +20,14 @@ ul {
   padding: 1em 0.5em;
   margin: 0.25em auto;
   width: 100%;
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  -webkit-transition: 0.3 ease;
+  transition: 0.3 ease; }
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
