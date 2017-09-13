@@ -15,16 +15,16 @@ body{
   margin: auto;
 }
 
-ul{
+ul.todo_list{
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .list-item{
-  padding: 1em 0.5em;
+  padding: 1em;
   margin: 0.25em auto;
-  width: 100%;
-  background-color: #eeeeee;
+  background-color: #ededed;
   transition: 0.3 ease;
 }
 
@@ -32,4 +32,9 @@ li{
   @extend .list-item;
   display: flex;
   justify-content: space-between;
+  transition: 0.3s ease;
+  &:hover{
+    cursor: pointer;
+    opacity: 0.8
+  }
 }

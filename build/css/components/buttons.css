@@ -1,13 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+ul {
+  list-style-type: none;
+  font-family: "PT Serif", georgia, serif;
+  font-size: 2em; }
+
+li {
+  font-family: "PT Serif", georgia, serif; }
+
+div.form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+button.add-button {
+  width: 100%;
+  max-width: 15em;
+  font-family: "PT Serif", georgia, serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  border: none;
+  background-color: #ef914b;
+  color: #fff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease; }
+  button.add-button:hover {
+    cursor: pointer;
+    background-color: #f4663b; }
+
+input#todo-list-input {
+  font-size: 2em;
+  font-family: "PT Serif", georgia, serif;
+  padding: 0.5em;
+  width: 100%; }
+
 .checked {
   text-decoration: line-through; }
 
 span.close {
   margin-right: 0.5em;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #e4e3e4;
   padding: 0 0.3em;
-  color: #333;
+  color: #868388;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease; }
   span.close:hover {
-    color: red;
+    color: #fff;
+    background-color: #ef914b;
     cursor: pointer; }
