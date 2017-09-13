@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+ul {
+  list-style-type: none;
+  font-family: "PT Serif", georgia, serif;
+  font-size: 2em; }
+
+li {
+  font-family: "PT Serif", georgia, serif; }

@@ -1,0 +1,32 @@
+html{
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body{
+  margin: 1em;
+  padding: 0;
+}
+
+.wrapper{
+  max-width: 96em;
+  width: 100%;
+  margin: auto;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+.list-item{
+  padding: 1em 0.5em;
+  margin: 0.25em auto;
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+li{
+  @extend .list-item;
+}

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+$list-font-stack: 'PT Serif', georgia, serif;
+
+ul{
+  list-style-type: none;
+  font-family: $list-font-stack;
+  font-size: 2em;
+}
+
+li{
+  font-family: $list-font-stack;
+}
