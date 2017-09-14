@@ -1,1 +1,9 @@
-$variable-one: #333;
+$peach: #fcefeb;
+$orange: #f48c58;
+$red: #ff3d33;
+$medium-gray: #383838;
+
+//gradient mixin
+@mixin linear-gradient ($direction, $color-stops){
+  background: nth(nth($color-stops, 1), 1);
+}

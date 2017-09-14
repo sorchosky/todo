@@ -1,10 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Serif');
-$list-font-stack: 'PT Serif', georgia, serif;
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700');
+$list-font-stack: 'Playfair Display', georgia, serif;
+
+h1#date{
+  font-family: $list-font-stack;
+  font-weight: 700;
+  font-size: 2em;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
 
 ul{
   list-style-type: none;
   font-family: $list-font-stack;
   font-size: 2em;
+  font-weight: 400;
 }
 
 li{

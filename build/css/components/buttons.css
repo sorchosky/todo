@@ -1,11 +1,19 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700");
+h1#date {
+  font-family: "Playfair Display", georgia, serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: #fff;
+  letter-spacing: 0.05em; }
+
 ul {
   list-style-type: none;
-  font-family: "PT Serif", georgia, serif;
-  font-size: 2em; }
+  font-family: "Playfair Display", georgia, serif;
+  font-size: 2em;
+  font-weight: 400; }
 
 li {
-  font-family: "PT Serif", georgia, serif; }
+  font-family: "Playfair Display", georgia, serif; }
 
 div.form {
   width: 100%;
@@ -14,39 +22,44 @@ div.form {
   display: flex; }
 
 button.add-button {
-  width: 100%;
-  max-width: 15em;
-  font-family: "PT Serif", georgia, serif;
-  font-size: 1em;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.1em;
   border: none;
-  background-color: #ef914b;
+  background-color: #f48c58;
   color: #fff;
   -webkit-transition: 0.3s ease;
-  transition: 0.3s ease; }
+  transition: 0.3s ease;
+  border-radius: 0 0.3em 0.3em 0; }
   button.add-button:hover {
     cursor: pointer;
-    background-color: #f4663b; }
+    opacity: 0.5; }
+  button.add-button:after {
+    content: '+';
+    padding: 0 0.5em;
+    font-weight: 300; }
 
 input#todo-list-input {
   font-size: 2em;
-  font-family: "PT Serif", georgia, serif;
+  font-family: "Playfair Display", georgia, serif;
   padding: 0.5em;
-  width: 100%; }
+  width: 100%;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0.3em 0 0 0.3em; }
 
 .checked {
   text-decoration: line-through; }
 
 span.close {
   margin-right: 0.5em;
-  background-color: #e4e3e4;
-  padding: 0 0.3em;
-  color: #868388;
+  padding: 0 0.5em;
+  color: #383838;
+  opacity: 0.5;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease; }
   span.close:hover {
-    color: #fff;
-    background-color: #ef914b;
+    opacity: 1;
     cursor: pointer; }

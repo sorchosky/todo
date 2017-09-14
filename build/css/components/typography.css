@@ -1,8 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700");
+h1#date {
+  font-family: "Playfair Display", georgia, serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: #fff;
+  letter-spacing: 0.05em; }
+
 ul {
   list-style-type: none;
-  font-family: "PT Serif", georgia, serif;
-  font-size: 2em; }
+  font-family: "Playfair Display", georgia, serif;
+  font-size: 2em;
+  font-weight: 400; }
 
 li {
-  font-family: "PT Serif", georgia, serif; }
+  font-family: "Playfair Display", georgia, serif; }

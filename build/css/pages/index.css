@@ -1,7 +1,8 @@
 html {
   margin: 0;
   padding: 0;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: #fcefeb; }
 
 body {
   margin: 1em;
@@ -9,17 +10,26 @@ body {
 
 .wrapper {
   max-width: 96em;
-  width: 100%;
-  margin: auto; }
+  width: 90%;
+  margin: auto;
+  -webkit-box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.15);
+  border-radius: 0.6em; }
+
+div.header {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f48c58), to(#ff3d33));
+  background-image: linear-gradient(90deg, #f48c58, #ff3d33);
+  border-radius: 0.6em 0.6em 0 0;
+  padding: 2em; }
 
 ul.todo_list {
   padding: 0;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+  border-radius: 0 0 0.6em 0.6em; }
 
 .list-item, li {
   padding: 1em;
-  margin: 0.25em auto;
   background-color: #ededed;
   -webkit-transition: 0.3 ease;
   transition: 0.3 ease; }
@@ -36,3 +46,5 @@ li {
   li:hover {
     cursor: pointer;
     opacity: 0.8; }
+  li:last-child {
+    border-radius: 0.6em; }

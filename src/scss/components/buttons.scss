@@ -1,4 +1,5 @@
 @import "typography.scss";
+@import "../helpers/variables";
 
 //
 div.form{
@@ -7,21 +8,24 @@ div.form{
 }
 
 button.add-button{
-  width: 100%;
-  max-width: 15em;
-  font-family: $list-font-stack;
-  font-size: 1em;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.1em;
   border: none;
-  background-color: #ef914b;
+  background-color: $orange;
   color: #fff;
   transition: 0.3s ease;
   &:hover{
     cursor: pointer;
-    background-color: #f4663b;
+    opacity: 0.5;
   }
+  &:after{
+    content: '+';
+    padding: 0 0.5em;
+    font-weight: 300;
+  }
+  border-radius: 0 0.3em 0.3em 0;
 }
 
 
@@ -32,6 +36,9 @@ input#todo-list-input{
   font-family: $list-font-stack;
   padding: 0.5em;
   width: 100%;
+  border: none;
+  box-shadow: none;
+  border-radius: 0.3em 0 0 0.3em;
 }
 
 //Add to list button
@@ -46,13 +53,12 @@ input#todo-list-input{
 //Close button
 span.close {
   margin-right: 0.5em;
-  background-color: #e4e3e4;
-  padding: 0 0.3em;
-  color: #868388;
+  padding: 0 0.5em;
+  color: $medium-gray;
+  opacity: 0.5;
   transition: 0.3s ease;
   &:hover{
-    color: #fff;
-    background-color: #ef914b;
+    opacity: 1;
     cursor: pointer;
   }
 }
