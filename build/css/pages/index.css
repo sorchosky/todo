@@ -12,25 +12,24 @@ body {
   max-width: 96em;
   width: 90%;
   margin: auto;
+  border-radius: 0.3em;
   -webkit-box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.15);
-  border-radius: 0.6em; }
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.15); }
 
 div.header {
   background-image: -webkit-gradient(linear, left top, right top, from(#f48c58), to(#ff3d33));
   background-image: linear-gradient(90deg, #f48c58, #ff3d33);
-  border-radius: 0.6em 0.6em 0 0;
+  border-radius: 0.3em 0.3em 0 0;
   padding: 2em; }
 
 ul.todo_list {
   padding: 0;
   margin: 0;
-  width: 100%;
-  border-radius: 0 0 0.6em 0.6em; }
+  width: 100%; }
 
 .list-item, li {
   padding: 1em;
-  background-color: #ededed;
+  background-color: #fff;
   -webkit-transition: 0.3 ease;
   transition: 0.3 ease; }
 
@@ -47,4 +46,4 @@ li {
     cursor: pointer;
     opacity: 0.8; }
   li:last-child {
-    border-radius: 0.6em; }
+    border-radius: 0 0 0.3em 0.3em; }

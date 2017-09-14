@@ -15,7 +15,10 @@ ul {
 li {
   font-family: "Playfair Display", georgia, serif; }
 
-div.form {
+textarea, input, button {
+  outline: none; }
+
+form.form {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,27 +30,30 @@ button.add-button {
   font-weight: 700;
   letter-spacing: 0.1em;
   border: none;
-  background-color: #f48c58;
-  color: #fff;
+  background-color: #fcefeb;
+  color: #383838;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  outline: none;
   border-radius: 0 0.3em 0.3em 0; }
   button.add-button:hover {
     cursor: pointer;
-    opacity: 0.5; }
+    background-color: #f48c58;
+    color: #fff; }
   button.add-button:after {
     content: '+';
-    padding: 0 0.5em;
+    padding: 0 0.75em;
     font-weight: 300; }
 
 input#todo-list-input {
-  font-size: 2em;
+  font-size: 1.6em;
   font-family: "Playfair Display", georgia, serif;
-  padding: 0.5em;
+  padding: 1em;
   width: 100%;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+  outline: none;
   border-radius: 0.3em 0 0 0.3em; }
 
 .checked {

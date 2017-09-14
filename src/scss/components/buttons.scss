@@ -2,7 +2,9 @@
 @import "../helpers/variables";
 
 //
-div.form{
+textarea, input, button { outline: none; }
+
+form.form{
   width: 100%;
   display: flex;
 }
@@ -13,16 +15,18 @@ button.add-button{
   font-weight: 700;
   letter-spacing: 0.1em;
   border: none;
-  background-color: $orange;
-  color: #fff;
+  background-color: $peach;
+  color: $medium-gray;
   transition: 0.3s ease;
+  outline: none;
   &:hover{
     cursor: pointer;
-    opacity: 0.5;
+    background-color: $orange;
+    color: #fff;
   }
   &:after{
     content: '+';
-    padding: 0 0.5em;
+    padding: 0 0.75em;
     font-weight: 300;
   }
   border-radius: 0 0.3em 0.3em 0;
@@ -32,12 +36,13 @@ button.add-button{
 
 //input field
 input#todo-list-input{
-  font-size: 2em;
+  font-size: 1.6em;
   font-family: $list-font-stack;
-  padding: 0.5em;
+  padding: 1em;
   width: 100%;
   border: none;
   box-shadow: none;
+  outline: none;
   border-radius: 0.3em 0 0 0.3em;
 }
 
