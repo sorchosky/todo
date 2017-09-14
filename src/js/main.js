@@ -77,3 +77,22 @@ function newElement() {
     }
   }
 }
+
+  // Hitting the return key adds an items
+  document.getElementById('todo-list-input').addEventListener('keypress', function(event) {
+      if (event.keyCode == 13) {
+        event.preventDefault();
+        newElement();
+      }
+  });
+
+  //Get the current date and put it into the h2 with #date
+
+  var dow = new Date().getDay();
+  var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  var month = new Date().getMonth();
+  var monthsOfYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  var day = new Date().getDate();
+
+
+  document.getElementById("date").innerHTML = daysOfWeek[dow] + ", " + monthsOfYear[month] + " " + day;
